@@ -51,17 +51,17 @@ While all of the models improved, LogisticRegression overtook SVC for the top-sp
 ## Confusion Matrixes
 
 For this application, there is not a high cost for either flase positive or false negatives. However, it is still interesting to check the confusion matrices. It could be possible for two models with comparable accuracies to present very different error types. On marginal calls like this one (91.4% accuracy for LogisticRegression and 91.0% accuracy for SVC), business considerations might prefer one type of error over the other. For example, if we were concerned about maximing the productivity of our calls, we might be willing to take the trade of slightly lower overall accuracy for slightly higher precision. Conversely, if we had a limited list of potential customers to call, we might be more concerned about over-looking some "yes" responses and prefer higher recall. Here the Confusion Matrixes do not show much variation in error types
-![Confusion Matrix](images/age_distribution.png)
-![Confusion Matrix](images/age_distribution.png)
-![Confusion Matrix](images/age_distribution.png)
-![Confusion Matrix](images/age_distribution.png)
+![Confusion Matrix](Images/DTree_Confusion.png)
+![Confusion Matrix](Images/KN_Confusion.png)
+![Confusion Matrix](Images/SVC_Confusion.png)
+![Confusion Matrix](Images/LogReg_Confusion.png)
 
 ## Feature Importance
 Interpretting the Feature Importance of the Logistic Regression model can be tricky. Here are the outputs for the top 10 most impactful features: 
 
 
 Here is a chart
-![Feature Importance](images/age_distribution.png)
+![Feature Importance](Images/LinReg_Feature_Importance.png)
 
 ## Conclusion
 Over-all the LogisticRegression model performs the best, and should be selected to predict 
